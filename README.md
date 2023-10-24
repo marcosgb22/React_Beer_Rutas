@@ -1,6 +1,6 @@
 # React_Beer
 
-marketplace React projet 
+marketplace React 
 
 
 proyecto CODER - MARCOS BARRIOS

@@ -1,0 +1,42 @@
+[
+    {
+        "id":1,
+        "nombre":"doble IPA cabezas",
+        "precio":120,
+        "img":"/img/dobleipacabezas.png",
+        "descripcion":"Artesanal -- doble IPA",
+        "stock":50
+    },
+    {
+        "id":2,
+        "nombre":"Negra volcanica",
+        "precio":90,
+        "img":"/img/dobleipavolcanica.png",
+        "descripcion":"Doble IPA -- volcanica",
+        "stock":10
+    },
+    {
+        "id":3,
+        "nombre":"Solaa",
+        "precio":70,
+        "img":"/img/duela.png",
+        "descripcion":"Duela Porter Sherry",
+        "stock":20
+    },
+    {
+        "id":4,
+        "nombre":"Doble IPA 7 vidas",
+        "precio":70,
+        "img":"/img/dobleipasietevidas.png",
+        "descripcion":"Doble IPA -- 7 Vidas",
+        "stock":20
+    },
+    {
+        "id":5,
+        "nombre":"La Chouffe",
+        "precio":70,
+        "img":"/img/lachouffe.png",
+        "descripcion":"Doble IPA -- 7 Vidas",
+        "stock":20
+    }
+]

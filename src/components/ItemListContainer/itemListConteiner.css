@@ -1,6 +1,9 @@
-.Mensaje {
+.listContainer {
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
   }
+.mensajePrincipal{
+  margin: 10px;
+}

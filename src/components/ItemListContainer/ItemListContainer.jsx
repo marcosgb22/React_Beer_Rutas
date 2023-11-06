@@ -7,7 +7,7 @@ const ItemListContainer = ({mensaje}) => {
     const [products,setProducts] = useState([])
     useEffect(() => {
         const fetchData = () => {
-            return fetch('./data/data.json')
+            return fetch('/data/data.json')
             .then((response) => response.json())
             .then((data)=>{setProducts(data)})
         }

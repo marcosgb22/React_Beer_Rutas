@@ -2,6 +2,7 @@ import React, { useState, useEffect } from 'react';
 import './itemListConteiner.css'
 import ItemList from "../ItemList/Itemlist.jsx";
 import SpinnerLoading from '../Spinner/Spinner.jsx';
+import Footer from '../Footer/Footer.jsx';
 
 const ItemListContainer = ({mensaje}) => {
     const [products,setProducts] = useState([])
@@ -27,6 +28,7 @@ const ItemListContainer = ({mensaje}) => {
 
             }
         </div>
+        <Footer/>
         </>
     );
 };

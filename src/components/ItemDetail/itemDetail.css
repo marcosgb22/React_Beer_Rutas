@@ -1,11 +1,9 @@
-.listContainer {
+
+.detail{
     display: flex;
-    flex-wrap: wrap;
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    gap: 10px 20px;
-  }
-.mensajePrincipal{
-  margin: 10px;
+
+    
 }

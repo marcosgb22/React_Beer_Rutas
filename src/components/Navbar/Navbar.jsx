@@ -17,6 +17,9 @@ function NavBar() {
         <Navbar.Collapse id="basic-navbar-nav">
           <Nav className="me-auto">
           <Nav.Link as={Link} to="/contactos">Contacto</Nav.Link>
+          <Nav.Link as={Link} to="/IPA">IPA</Nav.Link>
+          <Nav.Link as={Link} to="/Negra">Negra</Nav.Link>
+          <Nav.Link as={Link} to="/Blonde">Blonde</Nav.Link>
           </Nav>
         </Navbar.Collapse>
       </Container>

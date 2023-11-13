@@ -1,11 +1,11 @@
 import React, { useState, useEffect } from 'react';
-import './itemListConteiner.css'
+
 import ItemList from "../ItemList/Itemlist.jsx";
 import SpinnerLoading from '../Spinner/Spinner.jsx';
-import Footer from '../Footer/Footer.jsx';
 import { useParams } from 'react-router-dom';
 
-const ItemListContainer = ({mensaje}) => {
+
+const ItemListContainerCategory = ({mensaje}) => {
     const [products,setProducts] = useState([])
     const {categoryId} = useParams()
     useEffect(() => {
@@ -13,11 +13,17 @@ const ItemListContainer = ({mensaje}) => {
             return fetch('/data/data.json')
             .then((response) => response.json())
             .then((data)=>{
-                    setProducts(data)                           
+                if(categoryId){
+                    const filterProducts = data.filter(p=>p.categoria == categoryId )
+                    setProducts(filterProducts)
+
+                }else{
+                    setProducts(data)
+                }
                 })
         }
         fetchData();
-    },[])
+    },[categoryId])
 
     return (
         <>
@@ -32,9 +38,8 @@ const ItemListContainer = ({mensaje}) => {
 
             }
         </div>
-        <Footer/>
         </>
     );
 };
 
-export default ItemListContainer;
+export default ItemListContainerCategory;
